@@ -1,0 +1,23 @@
+obj\vector.exe:         obj\vector.obj obj\modex.obj obj\draw.obj obj\image.obj obj\text.obj obj\font.obj obj\fm.obj
+                        tlink obj\vector obj\modex obj\draw obj\image obj\fm obj\text obj\font obj\music, obj\vector.exe
+
+obj\vector.obj:         vector.asm objects.asm
+                        tasm /m /iINCLUDES /jJUMPS vector, obj\vector
+
+obj\modex.obj:          modex.asm
+                        tasm /m /iINCLUDES /jJUMPS modex, obj\modex
+
+obj\draw.obj:           draw.asm
+                        tasm /m /iINCLUDES /jJUMPS draw, obj\draw
+
+obj\image.obj:          image.asm
+                        tasm /m image, obj\image
+
+obj\text.obj:           text.asm
+                        tasm /jJUMPS /m /iINCLUDES text, obj\text
+
+obj\font.obj:           font.asm
+                        tasm /jJUMPS /m /iINCLUDES font, obj\font
+
+obj\fm.obj:             fm.asm
+                        tasm /m fm, obj\fm
