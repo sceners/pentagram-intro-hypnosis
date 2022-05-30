@@ -2,7 +2,7 @@
 
 #### Written in 1994 December.
 
-[Original package](https://defacto2.net/f/a41896f)
+[Original package](https://defacto2.net/f/af2042a)
 
 ```
  │ HYP-PTG .ZIP  174 Kb  01-12-94  PENTAGRAM Intro, Source Code Included     │
